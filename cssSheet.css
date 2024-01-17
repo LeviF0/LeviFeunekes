@@ -12,6 +12,7 @@
 .text {
     margin-top: 105px;
     font-size: larger;
+    
 }
 
 .dot1 {
@@ -31,5 +32,3 @@
             hsla(67, 100%, 50%, 0.934),
             hsla(126, 100%, 50%, 0.736) 100%);
 }
-
-/* test */
