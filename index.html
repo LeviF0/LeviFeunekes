@@ -11,12 +11,15 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="cssSheet.css">
 </head>
 
-<body class="bg-success bg-opacity-25">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="bg-success bg-opacity-25 bg-gradient">
+
+  <!-- Header -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark bg-gradient">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand">Levi Feunekes</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,56 +39,82 @@
       </div>
     </div>
   </nav>
-  <div class="container py-3 px-3 mt-3 my-2 bg-success bg-opacity-25">
+
+
+  <!-- Front carousels -->
+  <div class="container py-3 px-3 mt-3 my-2 bg-success bg-opacity-25 rounded">
     <div class="row">
-      <div class="col-12 col-md-6 col-lg-4">
+      <div class="col-12 col-md-6 col-lg-4 ">
         <div class="card">
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="5000"><img src="Images/1.jpeg" class="d-block w-100"
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active" data-bs-interval="6000"><img src="Images/1.jpeg" class="d-block w-100"
                   alt="carousel1"></div>
-              <div class="carousel-item" data-bs-interval="5500"><img src="Images/2.jpeg" class="d-block w-100"
+              <div class="carousel-item" data-bs-interval="6000"><img src="Images/2.jpeg" class="d-block w-100"
                   alt="carousel2"></div>
               <div class="carousel-item" data-bs-interval="6000"><img src="Images/3.jpeg" class="d-block w-100"
                   alt="carousel3"></div>
+              <div class="carousel-item" data-bs-interval="6000"><img src="Images/4.jpeg" class="d-block w-100"
+                  alt="carousel4"></div>
+              <div class="carousel-item" data-bs-interval="6000"><img src="Images/5.jpeg" class="d-block w-100"
+                  alt="carousel5"></div>
             </div>
           </div>
         </div>
       </div>
+
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card bg-success-subtle">
           <div id="carouselExampleSlidesOnly2" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="5000"><img src="Images/5.jpeg" class="d-block w-100"
-                  alt="carousel5"></div>
-              <div class="carousel-item" data-bs-interval="5500"><img src="Images/6.jpeg" class="d-block w-100"
+              <div class="carousel-item active" data-bs-interval="6000"><img src="Images/ik.jpg" class="d-block w-100"
                   alt="carousel6"></div>
-              <div class="carousel-item" data-bs-interval="6000"><img src="Images/7.jpeg" class="d-block w-100"
+              <div class="carousel-item" data-bs-interval="6000"><img src="Images/normalefoto.jpg" class="d-block w-100"
                   alt="carousel7"></div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-text bg-success-subtle fs-6">(Al deze fotos zijn door mij gemaakt.)</h5>
+              <div class="carousel-item" data-bs-interval="6000"><img src="Images/DasMeOnWall.jpg" class="d-block w-100 h-100"
+                  alt="carousel8"></div>
+              <div class="carousel-item" data-bs-interval="6000"><img src="Images/DasMeOnWallHigher.jpg" class="d-block w-100 h-100"
+                  alt="carousel9"></div>
             </div>
           </div>
         </div>
       </div>
+
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card">
           <div id="carouselExampleSlidesOnly3" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="5000"><img src="Images/8.jpeg" class="d-block w-100"
-                  alt="carousel8"></div>
-              <div class="carousel-item" data-bs-interval="5500"><img src="Images/9.jpeg" class="d-block w-100"
-                  alt="carousel9"></div>
-              <div class="carousel-item" data-bs-interval="6000"><img src="Images/10.jpeg" class="d-block w-100"
+              <div class="carousel-item active" data-bs-interval="6000"><img src="Images/6.jpeg" class="d-block w-100"
                   alt="carousel10"></div>
+              <div class="carousel-item" data-bs-interval="6000"><img src="Images/7.jpeg" class="d-block w-100"
+                  alt="carousel11"></div>
+              <div class="carousel-item" data-bs-interval="6000"><img src="Images/8.jpeg" class="d-block w-100"
+                  alt="carousel12"></div>
+              <div class="carousel-item" data-bs-interval="6000"><img src="Images/9.jpeg" class="d-block w-100"
+                  alt="carousel13"></div>
+              <div class="carousel-item" data-bs-interval="6000"><img src="Images/10.jpeg" class="d-block w-100"
+                  alt="carousel14"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="text-white bg-dark d-flex justify-content-center my-5" id="scrollspyHeading1">
+
+  <!-- <div class="carousel-item" data-bs-interval="6000"><img src="Images/6.jpeg" class="d-block w-100"
+    alt="carousel9"></div>
+<div class="carousel-item" data-bs-interval="6000"><img src="Images/7.jpeg" class="d-block w-100"
+    alt="carousel10"></div>
+<div class="carousel-item" data-bs-interval="6000"><img src="Images/8.jpeg" class="d-block w-100"
+    alt="carousel11"></div>
+<div class="carousel-item" data-bs-interval="6000"><img src="Images/9.jpeg" class="d-block w-100"
+    alt="carousel12"></div>
+<div class="carousel-item" data-bs-interval="6000"><img src="Images/10.jpeg" class="d-block w-100"
+    alt="carousel13"></div>
+</div> -->
+
+  <!-- Skills s-->
+  <div class="text-white bg-dark d-flex justify-content-center my-5 bg-gradient" id="scrollspyHeading1">
     <h1>Skills/Talen</h1>
   </div>
   <div data-bs-spy="scroll" data-bs-target="#navbarTop" data-bs-offset="0"
@@ -134,8 +163,47 @@
       </div>
     </div>
   </div>
-  <div class="text-white bg-dark d-flex justify-content-center my-5" id="scrollspyHeading2">
+
+
+  <!-- Projecten intro -->
+  <div class="text-white bg-dark d-flex justify-content-center my-5 bg-gradient" id="scrollspyHeading2">
     <h1>Projects</h1>
+  </div>
+  <div class="fs-4 m-5 d-flex justify-content-center">
+    Ik heb meerdere projecten gehad over de laatste 3 jaar.
+    Mijn skills zijn uitgebreider geworden door alle research die ik heb gedaan.
+    Wat ik heb geleerd:
+    Hoe een team functioneerd en wat een goed team inhoud.
+    Logica van verschillende functies in verschillende programeer talen.
+    Het werken onder tijdsdruk en hoe ik mijn tijd beter kan spenderen en plannen.
+  </div>
+
+
+  <!-- Hampterball! -->
+  <div class="text-white bg-dark d-flex justify-content-center my-5 bg-gradient" id="scrollspyHeading2">
+    <h1>Hampterball!</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">Hampterball is een spel gemaakt door mijn team en ik.
+        Ons team: 22SDA, Koen polman, Alex Yefimof, Nicole Hieltjes, Rafael Alcazar Parades, Fernando kook, Levi
+        Feunekes.
+        "Ren hysterisch door een random gegenereerd level vol met vallen en obstakels."
+        Dit spel speel je door de accelerometer/gyroscoop van je telefoon te gebruiken.
+        De map voor de player wordt automatisch gegenereerd voor de player, ook wordt het achter je verwijderd.</div>
+      <div class="col"><img src="Images/Hampterball.png" style="width: 85%; height: auto;" alt="Hamp1"></div>
+      <div class="w-100"></div>
+      <div class="col"><img src="Images/movement.gif" style="width: 85%" alt="Hampgif"></div>
+      <div class="col">Het level bestaat uit allemaal "chunks" die achter elkaar worden geplakt.
+        Persoonlijk ben ik bezig geweest met de movement van ons spel.
+        Ook heb ik gewerkt aan de UI, game over screen, pauze menu etc
+        Verder ben ik ook nog bezig met het maken van de chunks voor de generatie van het spel.</div>
+    </div>
+  </div>
+
+
+  <div class="text-white bg-dark d-flex justify-content-center my-5 bg-gradient" id="scrollspyHeading2">
+    <h1>Hampterball!</h1>
   </div>
   <div class="container py-3 px-3 mt-3">
     <div class="row d-flex justify-content-center">
@@ -180,7 +248,7 @@
       </div>
     </div>
   </div>
-  <div class="text-white bg-dark d-flex justify-content-center my-5" id="scrollspyHeading3">
+  <div class="text-white bg-dark d-flex justify-content-center my-5 bg-gradient" id="scrollspyHeading3">
     <h1>Contact</h1>
   </div>
   <div class="contact bg-success bg-opacity-25 p-3 mb-5">
@@ -223,7 +291,7 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" data-bs-keyboard="true" id="LabyModal" tabindex="1" aria-labelledby="LabyModalLabel"
+    <div class="modal fade" clas data-bs-keyboard="true" id="LabyModal" tabindex="1" aria-labelledby="LabyModalLabel"
       aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -235,38 +303,6 @@
             organisatie op een andere planeet werkt. Jij zit vast in een grot met een "alien" die je achterna zit. Jouw
             doel is te blijven overleven en een uitweg vinden. Wij zijn nog maar in de begin van development dus we
             hebben nog niet veel om te laten zien.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" data-bs-keyboard="true" id="HampModal" tabindex="1" aria-labelledby="HampModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header" style="justify-content: center;">
-            <h1 class="modal-title fs-5 text-danger" id="HampModalLabel">Hampterball</h1>
-          </div>
-          <div class="modal-body">
-          </div>
-          <div class="mb-4 mt-2 m-5">
-            <p>
-              Hampterball is een spel gemaakt door mijn team en ik.
-              Ons team: 22SDA, Koen polman, Alex Yefimof, Nicole Hieltjes, Rafael Alcazar Parades, Fernando kook, Levi
-              Feunekes.
-              "Ren hysterisch door een random gegenereerd level vol met vallen en obstakels."
-              Dit spel speel je door de accelerometer/gyroscoop van je telefoon te gebruiken.
-              De map voor de player wordt automatisch gegenereerd voor de player, ook wordt het achter je verwijderd.
-              Het level bestaat uit allemaal "chunks" die achter elkaar worden geplakt.
-              Persoonlijk ben ik bezig geweest met de movement van ons spel.
-              Ook heb ik gewerkt aan de UI, game over screen, pauze menu etc
-              Verder ben ik ook nog bezig met het maken van de chunks voor de generatie van het spel.
-            </p>
-          </div>
-          <H5 style="text-align: center;" class="text-danger">
-            Gameplay
-          </H5>
-          <div style="justify-content: center;">
-            <img src="Images/movement.gif" class="mb-5 img-fluid rounded mx-auto d-block" alt="gif">
           </div>
         </div>
       </div>

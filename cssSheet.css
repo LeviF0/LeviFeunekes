@@ -1,0 +1,12 @@
+.itemcenter {
+    flex: 0 1 auto;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 200px;
+    height: 250px;
+}
+
+#layer1{
+z-index: 10;
+}
