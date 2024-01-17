@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Levi Feunekes</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -12,6 +12,8 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="cssSheet.css">
+  <!-- add icon link -->
+  <link rel="icon" href="Images/idea.png" type="image/x-icon">
 </head>
 
 <body class="bg-success bg-opacity-25 bg-gradient">
@@ -27,19 +29,21 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading1">Skills/Talen</a>
+            <a class="nav-link" href="#scrollspyHeading1">Over mij</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading2">Projects</a>
+            <a class="nav-link" href="#scrollspyHeading2">Skills/Talen</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading3">Contact</a>
+            <a class="nav-link" href="#scrollspyHeading3">Projecten</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading6">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
 
   <!-- Front carousels -->
   <div class="container py-3 px-3 mt-3 my-2 bg-success bg-opacity-25 rounded">
@@ -71,10 +75,10 @@
                   alt="carousel6"></div>
               <div class="carousel-item" data-bs-interval="6000"><img src="Images/normalefoto.jpg" class="d-block w-100"
                   alt="carousel7"></div>
-              <div class="carousel-item" data-bs-interval="6000"><img src="Images/DasMeOnWall.jpg" class="d-block w-100 h-100"
-                  alt="carousel8"></div>
-              <div class="carousel-item" data-bs-interval="6000"><img src="Images/DasMeOnWallHigher.jpg" class="d-block w-100 h-100"
-                  alt="carousel9"></div>
+              <div class="carousel-item" data-bs-interval="6000"><img src="Images/DasMeOnWall.jpg"
+                  class="d-block w-100 h-100" alt="carousel8"></div>
+              <div class="carousel-item" data-bs-interval="6000"><img src="Images/DasMeOnWallHigher.jpg"
+                  class="d-block w-100 h-100" alt="carousel9"></div>
             </div>
           </div>
         </div>
@@ -100,25 +104,31 @@
       </div>
     </div>
   </div>
-
-  <!-- <div class="carousel-item" data-bs-interval="6000"><img src="Images/6.jpeg" class="d-block w-100"
-    alt="carousel9"></div>
-<div class="carousel-item" data-bs-interval="6000"><img src="Images/7.jpeg" class="d-block w-100"
-    alt="carousel10"></div>
-<div class="carousel-item" data-bs-interval="6000"><img src="Images/8.jpeg" class="d-block w-100"
-    alt="carousel11"></div>
-<div class="carousel-item" data-bs-interval="6000"><img src="Images/9.jpeg" class="d-block w-100"
-    alt="carousel12"></div>
-<div class="carousel-item" data-bs-interval="6000"><img src="Images/10.jpeg" class="d-block w-100"
-    alt="carousel13"></div>
-</div> -->
-
-  <!-- Skills s-->
-  <div class="text-white bg-dark d-flex justify-content-center my-5 bg-gradient" id="scrollspyHeading1">
-    <h1>Skills/Talen</h1>
-  </div>
   <div data-bs-spy="scroll" data-bs-target="#navbarTop" data-bs-offset="0"
     class="scrollspy d-flex justify-content-center" tabindex="0">
+  </div>
+
+  <!-- About me -->
+  <div class="text-white bg-dark d-flex justify-content-center my-5 bg-gradient" id="scrollspyHeading1">
+    <h1>Over mij</h1>
+  </div>
+  <div class="justify-content-center my-5 p-4 d-flex bg-success bg-opacity-25 rounded">
+    <span class="dot1 bg-image ">
+      <div class="text">Wie ben ik?</div>
+    </span>
+    <span class="dot2 bg-image hover-zoom">
+      <div class="text">Wat doe ik?</div>
+    </span>
+    <span class="dot3 bg-image hover-zoom">
+      <div class="text">Ervaring</div>
+    </span>
+  </div>
+
+  <!-- Skills -->
+  <div class="text-white bg-dark d-flex justify-content-center my-5 bg-gradient" id="scrollspyHeading2">
+    <h1>Skills/Talen</h1>
+  </div>
+  <div class="p-4 d-flex justify-content-center bg-success bg-opacity-25 rounded">
     <div class="w-75">
       <h4>C#</h4>
       <div class="progress" style="text-align: center;">
@@ -164,9 +174,8 @@
     </div>
   </div>
 
-
   <!-- Projecten intro -->
-  <div class="text-white bg-dark d-flex justify-content-center my-5 bg-gradient" id="scrollspyHeading2">
+  <div class="text-white bg-dark d-flex justify-content-center my-5 bg-gradient" id="scrollspyHeading3">
     <h1>Projects</h1>
   </div>
   <div class="fs-4 m-5 d-flex justify-content-center">
@@ -178,9 +187,8 @@
     Het werken onder tijdsdruk en hoe ik mijn tijd beter kan spenderen en plannen.
   </div>
 
-
   <!-- Hampterball! -->
-  <div class="text-white bg-dark d-flex justify-content-center my-5 bg-gradient" id="scrollspyHeading2">
+  <div class="text-white bg-dark d-flex justify-content-center my-5 bg-gradient" id="scrollspyHeading4">
     <h1>Hampterball!</h1>
   </div>
   <div class="container">
@@ -201,8 +209,7 @@
     </div>
   </div>
 
-
-  <div class="text-white bg-dark d-flex justify-content-center my-5 bg-gradient" id="scrollspyHeading2">
+  <div class="text-white bg-dark d-flex justify-content-center my-5 bg-gradient" id="scrollspyHeading5">
     <h1>Hampterball!</h1>
   </div>
   <div class="container py-3 px-3 mt-3">
@@ -248,7 +255,9 @@
       </div>
     </div>
   </div>
-  <div class="text-white bg-dark d-flex justify-content-center my-5 bg-gradient" id="scrollspyHeading3">
+
+  <!-- Contact -->
+  <div class="text-white bg-dark d-flex justify-content-center my-5 bg-gradient" id="scrollspyHeading6">
     <h1>Contact</h1>
   </div>
   <div class="contact bg-success bg-opacity-25 p-3 mb-5">
@@ -272,8 +281,9 @@
         <p>Glanerbrug, Enschede <i class="bi bi-geo-alt p-4"></i></p>
       </div>
     </div>
+  </div>
 
-    <div class="modal fade" data-bs-keyboard="true" id="SwipeModal" tabindex="1" aria-labelledby="SwipeModalLabel"
+  <!-- <div class="modal fade" data-bs-keyboard="true" id="SwipeModal" tabindex="1" aria-labelledby="SwipeModalLabel"
       aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -307,7 +317,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </body>
 
 </html>
