@@ -3,31 +3,45 @@
 .dot3 {
     height: 250px;
     width: 250px;
-    margin-right: 50px;
+    margin-right: 45px;
+    margin-bottom: 10px;
     border-radius: 50%;
     display: inline-block;
     text-align: center;
 }
 
 .text {
-    margin-top: 105px;
-    font-size: larger;
+    margin-top: 100px;
 }
 
 .dot1 {
+    background: linear-gradient(45deg,
+            hsla(0, 100%, 50%, 0.781),
+            hsla(47, 100%, 50%, 0.895) 100%);
+}
+
+.dot2 {
+    background: linear-gradient(45deg,
+            hsla(67, 100%, 50%, 0.934),
+            hsla(126, 100%, 50%, 0.736) 100%);
+}
+
+.dot3 {
     background: linear-gradient(45deg,
             hsla(168, 85%, 52%, 0.5),
             hsla(263, 88%, 45%, 0.5) 100%);
 }
 
-.dot2 {
-    background: linear-gradient(45deg,
-            hsla(0, 90%, 43%, 0.781),
-            hsla(39, 100%, 50%, 0.895) 100%);
+.img {
+    border: 5px solid transparent;
+    border-color: cadetblue;
 }
 
-.dot3 {
-    background: linear-gradient(45deg,
-            hsla(67, 100%, 50%, 0.934),
-            hsla(126, 100%, 50%, 0.736) 100%);
+.btn:hover {
+    font-size: 110%;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
 }
