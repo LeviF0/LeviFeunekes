@@ -69,6 +69,27 @@
     margin-top: 100px;
 }
 
+.text1, .text2, .text3 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.dot1, .dot2, .dot3 {
+    overflow: hidden;
+    vertical-align: top; 
+}
+
+.original-text, .hover-text {
+    text-align: center;
+    padding: 20px;
+    font-size: .75rem;
+    line-height: 1.4;
+    color: black;
+    background-color: transparent;
+    z-index: 1;
+}
+
 .dot1 {
     background: linear-gradient(45deg,
             hsla(0, 100%, 50%, 0.781),
