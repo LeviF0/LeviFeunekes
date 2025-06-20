@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeviFeunekes.exe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="terminal">
+    <div class="ascii-art" id="ascii"></div>
+    <div class="output" style="text-align: center; margin-top: 0; margin-bottom: 20px;">
+      <strong>Welcome to LeviFeunekes.exe</strong>
+    </div>
+    <div id="typewriter"></div>
+    <div class="blink"></div>
+  </div>
+
+  <script>
+    const asciiFrames = [
+  `
+   ____      _      __     __   ______    _   _ 
+  |  _ \\    / \\     \\ \\   / /  |  ____|  | \\ | |
+  | |_) |  / _ \\     \\ \\_/ /   | |__     |  \\| |
+  |  _ <  / ___ \\     |   |    |  __|    | . \` |
+  | |_) |/ /   \\ \\    | |\\ \\   | |____   | |\\  |
+  |____//_/     \\_\\   |_| \\_\\  |______|  |_| \\_|
+  `,
+  `
+   ____      _      __     __   ______    _   _ 
+  |  _ \\    / \\     \\ \\   / /  |  ____|  | \\ | |
+  | |_) |  / _ \\     \\ \\_/ /   | |__     |  \\| |
+  |  _ <  / ___ \\     |   |    |  __|    | . \` |
+  | |_) |/ /   \\ \\    | |\\ \\   | |____   | |\\  |
+  |____//_/     \\_\\   |_| \\_\\  |______|  |_| \\_|
+  `
+];
+
+
+    let frame = 0;
+    const asciiDiv = document.getElementById("ascii");
+    setInterval(() => {
+      asciiDiv.textContent = asciiFrames[frame];
+      frame = (frame + 1) % asciiFrames.length;
+    }, 300);
+
+    const lines = [
+      'Use the commands below to explore:',
+      '<a href="project1.html">project1</a>',
+      '<a href="#">project2</a>',
+      '<a href="#">project3</a>',
+      '',
+      'About me:',
+      'Jonathan Levi Feunekes',
+      'Third year Software Developer (ROC van Twente)',
+      'Glanerbrug, Enschede',
+      'Skills: Unity, C#, HTML, CSS, JS, Python, PHP',
+      'Hobbies: Bouldering, Hiking, Gym, Music Production'
+    ];
+
+    let currentLine = 0;
+    let charIndex = 0;
+    const typewriter = document.getElementById('typewriter');
+
+    function typeNextChar() {
+      if (currentLine >= lines.length) return;
+
+      let line = lines[currentLine];
+      let lineDiv = document.createElement('div');
+      lineDiv.classList.add('output');
+      typewriter.appendChild(lineDiv);
+
+      function typeLine() {
+        if (charIndex < line.length) {
+          lineDiv.innerHTML += line[charIndex++];
+          setTimeout(typeLine, 20);
+        } else {
+          currentLine++;
+          charIndex = 0;
+          setTimeout(typeNextChar, 200);
+        }
+      }
+
+      typeLine();
+    }
+
+    typeNextChar();
+  </script>
+</body>
+</html>
