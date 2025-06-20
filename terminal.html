@@ -20,16 +20,15 @@
 
   <script>
     async function loadAsciiFrames() {
-      const response = await fetch('Ascii/ascii-animation.txt');
+      const response = await fetch('ascii-animation.txt');
       const text = await response.text();
 
       const lines = text.split('\n');
-      const frameHeight = 20; // pas aan op basis van je txt structuur
+      const frameHeight = 100; // pas aan op basis van aantal regels per frame
       const frames = [];
 
       for (let i = 0; i < lines.length; i += frameHeight) {
-        const frameLines = lines.slice(i, i + frameHeight);
-        frames.push(frameLines.join('\n'));
+        frames.push(lines.slice(i, i + frameHeight).join('\n'));
       }
 
       return frames;
@@ -43,7 +42,7 @@
       setInterval(() => {
         asciiDiv.textContent = frames[frame];
         frame = (frame + 1) % frames.length;
-      }, 300);
+      }, 500);
     })();
 
     const lines = [
@@ -51,7 +50,6 @@
       '<a href="project1.html">project1</a>',
       '<a href="#">project2</a>',
       '<a href="#">project3</a>',
-      '',
       'About me:',
       'Jonathan Levi Feunekes',
       'Third year Software Developer (ROC van Twente)',
