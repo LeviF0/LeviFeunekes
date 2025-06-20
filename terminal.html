@@ -19,32 +19,32 @@
   </div>
 
   <script>
-    const asciiFrames = [
-  `
-   ____      _      __     __   ______    _   _ 
-  |  _ \\    / \\     \\ \\   / /  |  ____|  | \\ | |
-  | |_) |  / _ \\     \\ \\_/ /   | |__     |  \\| |
-  |  _ <  / ___ \\     |   |    |  __|    | . \` |
-  | |_) |/ /   \\ \\    | |\\ \\   | |____   | |\\  |
-  |____//_/     \\_\\   |_| \\_\\  |______|  |_| \\_|
-  `,
-  `
-   ____      _      __     __   ______    _   _ 
-  |  _ \\    / \\     \\ \\   / /  |  ____|  | \\ | |
-  | |_) |  / _ \\     \\ \\_/ /   | |__     |  \\| |
-  |  _ <  / ___ \\     |   |    |  __|    | . \` |
-  | |_) |/ /   \\ \\    | |\\ \\   | |____   | |\\  |
-  |____//_/     \\_\\   |_| \\_\\  |______|  |_| \\_|
-  `
-];
+    async function loadAsciiFrames() {
+      const response = await fetch('Ascii/ascii-animation.txt');
+      const text = await response.text();
 
+      const lines = text.split('\n');
+      const frameHeight = 20; // pas aan op basis van je txt structuur
+      const frames = [];
 
-    let frame = 0;
-    const asciiDiv = document.getElementById("ascii");
-    setInterval(() => {
-      asciiDiv.textContent = asciiFrames[frame];
-      frame = (frame + 1) % asciiFrames.length;
-    }, 300);
+      for (let i = 0; i < lines.length; i += frameHeight) {
+        const frameLines = lines.slice(i, i + frameHeight);
+        frames.push(frameLines.join('\n'));
+      }
+
+      return frames;
+    }
+
+    (async () => {
+      const asciiDiv = document.getElementById("ascii");
+      const frames = await loadAsciiFrames();
+      let frame = 0;
+
+      setInterval(() => {
+        asciiDiv.textContent = frames[frame];
+        frame = (frame + 1) % frames.length;
+      }, 300);
+    })();
 
     const lines = [
       'Use the commands below to explore:',
@@ -89,4 +89,5 @@
     typeNextChar();
   </script>
 </body>
+
 </html>
